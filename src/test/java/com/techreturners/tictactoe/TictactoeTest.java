@@ -6,14 +6,36 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class TictactoeTest {
 
 @Test
-    public void checkWinTest(){
+    public void checkWinNotFinishedTest(){
         Tictactoe ttt = new Tictactoe();
         int[][] board ={{0,0,1},
                 {0,1,2},
                 {2,1,0}};
         int winner = ttt.checkWin(board);
-        assertEquals(winner,0);
+        assertEquals(0,winner);
 
 }
+
+@Test
+    public void checkWinOneTest(){
+        Tictactoe ttt = new Tictactoe();
+        int[][] board ={{0,1,0},
+                {0,1,2},
+                {2,1,0}};
+        int winner = ttt.checkWin(board);
+        assertEquals(0,winner);
+
+    }
+
+    @Test
+    public void checkWinTwoTest(){
+        Tictactoe ttt = new Tictactoe();
+        int[][] board ={{2,1,0},
+                {2,1,2},
+                {2,1,0}};
+        int winner = ttt.checkWin(board);
+        assertEquals(0,winner);
+
+    }
 
 }
