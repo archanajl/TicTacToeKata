@@ -17,13 +17,13 @@ public class TictactoeTest {
 }
 
 @Test
-    public void checkWinOneTest(){
+    public void checkWinOneDiagonallyTest(){
         Tictactoe ttt = new Tictactoe();
-        int[][] board ={{0,1,0},
-                {0,1,2},
-                {2,1,0}};
+        int[][] board ={{1,0,0},
+                {2,1,0},
+                {0,2,1}};
         int winner = ttt.checkWin(board);
-        assertEquals(0,winner);
+        assertEquals(1,winner);
 
     }
 
