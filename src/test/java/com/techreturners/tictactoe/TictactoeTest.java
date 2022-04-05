@@ -28,7 +28,7 @@ public class TictactoeTest {
     }
 
     @Test
-    public void checkWinTwoTest(){
+    public void checkWinTwoColTest(){
         Tictactoe ttt = new Tictactoe();
         int[][] board ={{2,1,0},
                 {2,1,2},
