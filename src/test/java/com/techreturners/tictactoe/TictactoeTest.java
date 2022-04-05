@@ -32,9 +32,9 @@ public class TictactoeTest {
         Tictactoe ttt = new Tictactoe();
         int[][] board ={{2,1,0},
                 {2,1,2},
-                {2,1,0}};
+                {2,0,0}};
         int winner = ttt.checkWin(board);
-        assertEquals(0,winner);
+        assertEquals(2,winner);
 
     }
 
