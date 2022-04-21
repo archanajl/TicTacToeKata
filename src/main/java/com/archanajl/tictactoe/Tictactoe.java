@@ -1,4 +1,4 @@
-package com.techreturners.tictactoe;
+package com.archanajl.tictactoe;
 
 public class Tictactoe {
 
